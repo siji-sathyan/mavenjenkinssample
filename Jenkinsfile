@@ -22,6 +22,7 @@ pipeline{
                 sh 'mvn package'
                 }
             }
+    }
     stage('Deploy'){
             steps{
             withMaven(maven : 'maven_3_8_2'){
